@@ -7,7 +7,7 @@ var genesisHeader = {
   version: 1,
   prevHash: u.nullHash,
   merkleRoot: u.toHash('4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b'),
-  timestamp: 1296688602,
+  time: 1296688602,
   bits: 0x1d00ffff,
   nonce: 414098458
 }

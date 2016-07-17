@@ -3,15 +3,32 @@
 var bitcoin = require('webcoin-bitcoin').blockchain
 var u = require('bitcoin-util')
 
+// definition of the genesis block's header
 var genesisHeader = {
+  hash: '00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c',
+  height: 0,
   version: 1,
   prevHash: u.nullHash,
-  merkleRoot: u.toHash('4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b'),
-  time: 1296688602,
-  bits: 0x1d00ffff,
-  nonce: 414098458
+  merkleRoot: u.toHash('e0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7'),
+  time: 1390666206,
+  bits: 0x1e0ffff0,
+  nonce: 3861367235
 }
 
+// selected block headers for verifying initial sync
+var checkpoints = [{
+  hash: '00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c',
+  height: 0,
+  version: 1,
+  prevHash: u.nullHash,
+  merkleRoot: u.toHash('e0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7'),
+  time: 1390666206,
+  bits: 0x1e0ffff0,
+  nonce: 3861367235
+}];
+
+
+// TODO: implement chain validation
 var minDiffStart = 1329264000
 
 function shouldRetarget (block, cb) {
@@ -21,6 +38,7 @@ function shouldRetarget (block, cb) {
 }
 
 function calculateTarget (block, chain, cb) {
+
   if (block.height % this.interval === 0) {
     return bitcoin.calculateTarget.call(this, block, chain, cb)
   }
@@ -57,7 +75,5 @@ function traverseToRealDifficulty (block, chain, cb) {
 
 module.exports = {
   genesisHeader,
-  shouldRetarget,
-  calculateTarget,
-  traverseToRealDifficulty
+  checkpoints
 }

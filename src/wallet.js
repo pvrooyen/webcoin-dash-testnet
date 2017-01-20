@@ -1,11 +1,11 @@
 module.exports = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
+  messagePrefix: '\x18DarkCoin Signed Message:\n',
   bip32: {
-    public: 0x043587cf,
-    private: 0x04358394
+    public: 0x3a8061a0,
+    private: 0x3a805837
   },
-  pubKeyHash: 0x6f,
-  scriptHash: 0xc4,
+  pubKeyHash: 0x8c,
+  scriptHash: 0x13,
   wif: 0xef,
-  dustThreshold: 546
+  dustThreshold: 5460
 }

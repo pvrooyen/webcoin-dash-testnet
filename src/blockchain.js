@@ -6,10 +6,10 @@ var u = require('bitcoin-util')
 var genesisHeader = {
   version: 1,
   prevHash: u.nullHash,
-  merkleRoot: u.toHash('4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b'),
-  timestamp: 1296688602,
-  bits: 0x1d00ffff,
-  nonce: 414098458
+  merkleRoot: u.toHash('e0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7'),
+  time: 1390666206,
+  bits: 0x1e0ffff0,
+  nonce: 3861367235
 }
 
 var minDiffStart = 1329264000

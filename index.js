@@ -1,4 +1,4 @@
-var extend = require('webcoin-bitcoin')
+var extend = require('webcoin-dash')
 
 // inherit from bitcoin mainnet params
 module.exports = extend({

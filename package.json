@@ -1,7 +1,7 @@
 {
-  "name": "webcoin-bitcoin-testnet",
+  "name": "webcoin-dash-testnet",
   "version": "1.1.1",
-  "description": "Bitcoin testnet parameters for webcoin",
+  "description": "Dash testnet parameters for webcoin",
   "main": "index.js",
   "scripts": {
     "test": "standard index.js src && nyc tape test/index.js | faucet && nyc report",
@@ -12,7 +12,7 @@
     "publish": "npm run source"
   },
   "keywords": [
-    "bitcoin",
+    "dash",
     "webcoin",
     "constants",
     "network",
@@ -21,8 +21,8 @@
   "author": "Matt Bell <mappum@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bitcoin-util": "^2.0.0",
-    "webcoin-bitcoin": "snogcel/webcoin-bitcoin"
+    "dash-util": "^2.0.0",
+    "webcoin-dash": "^3.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mappum/webcoin-bitcoin-testnet.git"
+    "url": "git+https://github.com/snogcel/webcoin-dash-testnet.git"
   },
   "bugs": {
-    "url": "https://github.com/mappum/webcoin-bitcoin-testnet/issues"
+    "url": "https://github.com/snogcel/webcoin-dash-testnet/issues"
   },
-  "homepage": "https://github.com/mappum/webcoin-bitcoin-testnet#readme"
+  "homepage": "https://github.com/snogcel/webcoin-dash-testnet#readme"
 }

@@ -1,7 +1,7 @@
 // blockchain definition
 
-var bitcoin = require('webcoin-bitcoin').blockchain
-var u = require('bitcoin-util')
+var bitcoin = require('webcoin-dash').blockchain
+var u = require('dash-util')
 
 var genesisHeader = {
   version: 1,

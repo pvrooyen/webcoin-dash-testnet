@@ -1,6 +1,6 @@
 {
   "name": "webcoin-dash-testnet",
-  "version": "1.1.1",
+  "version": "0.1.1",
   "description": "Dash testnet parameters for webcoin",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "dash-util": "^2.0.0",
-    "webcoin-dash": "^3.0.0"
+    "webcoin-dash": "^3.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",

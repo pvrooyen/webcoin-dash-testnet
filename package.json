@@ -31,16 +31,16 @@
     "nyc": "^6.4.4",
     "standard": "^6.0.8",
     "tape": "^4.5.1",
-    "webcoin-param-tests": "^1.0.0",
+    "webcoin-param-tests": "^1.0.4",
     "zuul": "^3.10.1",
     "zuul-ngrok": "^4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snogcel/webcoin-dash-testnet.git"
+    "url": "git+https://github.com/pvrooyen/webcoin-dash-testnet.git"
   },
   "bugs": {
-    "url": "https://github.com/snogcel/webcoin-dash-testnet/issues"
+    "url": "https://github.com/pvrooyen/webcoin-dash-testnet/issues"
   },
-  "homepage": "https://github.com/snogcel/webcoin-dash-testnet#readme"
+  "homepage": "https://github.com/pvrooyen/webcoin-dash-testnet#readme"
 }
